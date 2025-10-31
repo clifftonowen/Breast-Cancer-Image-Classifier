@@ -6,10 +6,17 @@ This project trains a high-accuracy deep learning model to classify breast cance
 
 The goal is to build a robust classifier using a pre-trained Convolutional Neural Network (CNN) on an augmented dataset of breast cancer images (mammograms).
 
-## Dataset
+## Dataset & Acknowledgements
 
-* **Source:** The original images are from the "Breast Cancer (Ultrasound, Mammography, and Histopathology)" dataset available on Mendeley Data.
-* **Link:** [https://data.mendeley.com/datasets/fvjhtskg93/1](https://data.mendeley.com/datasets/fvjhtskg93/1)
+This project uses the "Mammogram Mastery: A Robust Dataset for Breast Cancer Detection and Medical Education" dataset available on Mendeley Data.
+
+**Citation:**
+
+> Aqdar , Karzan Barzan; Abdalla, Peshraw Ahmed; Mustafa , Rawand Kawa; Abdulqadir, Zhiyar Hamid; Qadir, Abdalbasit Mohammed; Shali, Alla Abdulqader; Aziz, Nariman Muhamad (2024), “Mammogram Mastery: A Robust Dataset for Breast Cancer Detection and Medical Education”, Mendeley Data, V1, doi: 10.17632/fvjhtskg93.1
+
+**Direct Link:**
+[https://data.mendeley.com/datasets/fvjhtskg93/1](https://data.mendeley.com/datasets/fvjhtskg93/1)
+
 * **Methodology:**
     1.  The "Original Dataset" was held back to be used as our final, unseen test set.
     2.  The "Augmented Dataset" was split into an 80% training set and a 20% validation set.
