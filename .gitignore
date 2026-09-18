@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Working brief for the leakage audit (not part of the project)
+breast-cancer-CLAUDE.md
+
+# Local virtual environment
+.venv/
