@@ -14,7 +14,12 @@ This repository is organized into distinct projects:
 * **`/1_binary_classification_mendeley/`**:
     * **Goal:** Train ResNet50 Model on a public Mendeley dataset of breast cancer images (JPG/PNG).
     * **Task:** Binary Classification (Cancer vs. Non-Cancer).
-    * **Status:** *[ "Completed"]*
+    * **Status:** *Completed* — an initially reported 99.7% test accuracy turned out to be data
+      leakage between the train and test splits (the dataset's own augmented folder contains the
+      "unseen" test images). After a corrected, lesion-level split and retrain, the honest result
+      is **97.09% test accuracy** against an 83.78% majority-class baseline. See
+      [`1_binary_classification_mendeley/README.md`](1_binary_classification_mendeley/README.md#leakage-audit)
+      for the full audit.
 
 * **`/2_binary_classification_dicom/`**:
     * **Goal:** To build a data pipeline and train a model on a large-scale, clinical dataset from The Cancer Imaging Archive (TCIA) in DICOM format.
